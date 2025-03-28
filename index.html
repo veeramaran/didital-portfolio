@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:aqua;
+        }
+
+        header {
+            background-color:rgb(91, 236, 6);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 100px; /* Adjust the size as needed */
+            height: 100px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="image.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>ARULVEERANARENDRAN.B</h1>
+            <p>Bsc computer science</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"><u>About</u></a></li>
+            <li><a href="#education"><u>Education</u></a></li>
+            <li><a href="#skills"><u>Skills</u></a></li>
+            <li><a href="#projects"><u>Projects</u></a></li>
+            <li><a href="#resume"><u>Resume</u></a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2><u>About Me</u></h2>
+            <p>I am a <b>Web Developer</b> who have Essential skills in designing the Front End and Excellence in Maintaining the backend along with the database Technologies. Along with the right skills, I have the Discipline, which Leads me to Complete the given work within the Given Time and allows me to Learn new things. My Goal is to satisfy the Requirements of a client, in terms of creating a Software or a Website depending on the Requirements and Technologies. If a chance is provided to me, I will prove who am I.</p>
+
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2><u>Education</u></h2>
+            <p>SSLC 60%</p>
+            <p>HSC  70%</p>
+            <p>Bsc COMPUTER SCIENCE IN PROGRESS</p>  
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2><u>Skills</u></h2>
+            <ul>
+                <li>Python</li>
+                <li>Spring</li>
+                <li>java</li>
+                <li>c++</li>
+                <li>Java script</li>
+                <li>microprocessor and microcontrolor</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2><u>Projects</u></h2>
+            <ul>
+                <li><a href="#">Python</a></li>
+                <li><a href="#">Css</a></li>
+                <li><a href="#">Html</a></li>
+                <li><a href="#">Ms office</a></li> 
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2><u>Resume</u></h2>
+            <a href="my resume.html" target="_blank" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; ARULVEERANARENDRAN.B</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

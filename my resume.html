@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        font-family: "Poppins",sans-serif;
+        font-weight: 400;
+    }
+    #page-layout{
+        width: 850px;
+        height: 850px;
+        border: 1px solid rgb(173, 216, 230);
+        margin: auto;
+        background-color: rgb(255, 255, 224);
+        display: flex;
+        box-shadow: 2px 3px rgb(3, 224, 51);
+    }
+    #side-bar{
+        background-color: rgb(22, 207, 37);
+        display: inline-block;
+        min-width: 50%;
+        height: 100%;
+        color: rgb(255, 255, 255);
+    }
+    #avatar{
+        height: 155px;
+        width: 130px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        display:block ;
+    }
+    #Designation{
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+    #Name{
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+    #profile-txt{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+    #side-bar .part{
+        padding-left: 10px;
+    }
+    .part{
+        padding-top: 30px;
+        letter-spacing:1.5px;
+
+    }
+    .con-link{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        padding-left: 2px;
+        font-size: 10px;
+        letter-spacing: 0.5px;
+        
+    }
+    .con-text{
+        padding-left: 2px;
+        color: rgb(1000, 80, 900);
+    }
+    .in-text{
+        font-size: 12px;
+        font-weight: 300;
+        padding-top: 10px;
+    }
+    .title{
+        font-weight: 600;
+        
+    }
+    .sorc{
+        font-weight: 500;
+        color: rgb(95, 192, 60);
+    }
+    #qualification-in, #Language-in{
+        padding-left: 20px;
+    }
+    #qualification .title{
+        display: inline-block;
+        padding-right: 10px;
+    }
+    .list, .in-text{
+        list-style-type: none;
+    }
+    .percent{
+        display: block;
+        background-color:rgb(13, 110, 13);
+        width: 150px;
+        height: 5px;
+    }
+    .per-fill{
+        background-color: rgb(17, 216, 17);
+    }
+    #tamil-per{
+        width: 95%;
+        height: 100%;
+    }
+    #english-per{
+        width: 70%;
+        height: 100%;
+    }
+    #main{
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 15px;
+    }
+    .content{
+        font-weight: 600px;
+        font-size: 10px;
+    }
+    .skills{
+        font-weight: 400;
+        font-size: 15px;
+        color: rgb(38, 8, 230);
+    }
+    .proj{
+        font-weight: 400;
+        font-size: 15px;
+        color: darkgreen;
+    }
+    .uolist{
+        padding-left: 20px;
+    }
+    .key{
+        font-weight: 500;
+        color: darkcyan;
+    }
+    .online{
+        display: inline;
+    }
+    
+</style>
+
+<body>
+    <div id="page-layout">
+        <div id="side-bar">
+            <img src="image.jpg"jpg alt="" id="avatar" style="width: 150px;">
+            <div id="profile-txt">
+                <h2 class="imp" id="Name"> ARULVEERANARENDRAN.B</h2><br>
+                <span class="imp" id="Designation">WEB DEVELOPER</span>  
+                  
+            </div>
+            <div id="Contact" class="part">
+                <h2 class="title"><u>CONTACT INFO</u></h2><br>
+                <ul>
+                    <li><i class="fas fa-phone">  91+ 9342721255</i></li><br>
+                    <li><i class="fa fa-envelope">arulveeranarendranb14@gmail.com</a></i></li><br>
+                </ul>
+            </div>
+            <div id="qualification" class="part">
+                <div>
+                    <h2 class="title"><i class="fa fa-graduation-cap"><u>EDUCATION</u></i></h2>
+                </div><br>
+                    <ul>
+                        <span>SSLC</span><br>
+                        <span>60%</span> <br><br>
+                        <span>HSC</span><br>
+                        <span>70%</span><br><br>
+                        <span>Bsc COMPUTER SCIENCE</span><br>
+                        <span>IN PROGRESS</span><br><br>
+                    </li>
+                </ul>
+            </div>
+            <div id="Language" class="part">
+                <h2 class="title"><u>LANGUAGES</u></h2><br>
+                <ul id="Language-in">
+                    <li class="in-text">
+                        <span class="sorc">TAMIL</span><br>
+                        <span class="percent">
+                            <div id="tamil-per" class="per-fill"></div>
+                        </span>    
+                    </li>
+                    <li class="in-text">
+                        <span class="sorc">ENGLISH</span><br>
+                        <span class="percent">
+                            <div id="english-per" class="per-fill"></div>
+                        </span>    
+                    </li>
+                </ul>
+            </div>
+            </div>
+        <div id="main">
+            <div class="part">
+                <h2  class="title"><u>PROFILE:</u></h2><br>
+                <p class="content">
+                    <h2>A web developer who have Essential skills in
+                    Designing the Front end Web pages and Excellence  
+                    in Maintaining the Back end along with the 
+                    Database Technologies.</h2>
+                </p><br>
+            </div>
+            <div class="part">
+                <h2 class="title"><u>TECHNICAL SKILLS:</u></h2><br>
+                <ul class="uolist">           
+                    <li class="skills">HTML</li><br>
+                    <li class="skills">CSS</li><br>
+                    <li class="skills">JavaScript</li><br>
+                    <li class="skills">Design</li><br>
+                    <li class="skills">MS Office (Word, Excel, Powerpoint)</li>
+                </ul>
+            </div>
+            <!--<div class="part">
+                <h4 class="title">PROJECTS</h4>
+                <ul class="uolist">
+                    <li class="proj"><span class="key">Attendance Automation project</span><br>using C++ and File Systems</li>
+                    <li class="proj"><span class="key">GST Calculation and automation Project</span> using Java</li>
+                    <li class="proj"><span class="key">Invoice Generator Project</span><br>using C++</li>
+                </ul>
+            </div>-->
+            <div class="part">
+                <h2 class="title"><u>INTREST:</u></h2><br>
+                <ul class="online">
+                    <ul class="online">
+                        <i class="fa fa-star"></i> SOFTWARE AND HARDWARE<br><br>
+                        <i class="fa fa-star"></i> CODING<br><br>
+                        <i class="fas fa-gamepad"></i> PLAYNG GAMES<br><br>
+                        <i class="fa fa-star"></i> EXTRA CURRICULAR ACTIVITIES<br>
+                    </ul>
+                </div>
+            <div class="part">
+                <h2 class="title"><u>CERTIFICATES</u></h2><br>
+                <ul class="online">
+                    <i class="fa fa-star"></i> HTML & CSS<br><br>
+                    <i class="fa fa-star"></i> EXTRA CURRICULAR ACTIVITIES
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
